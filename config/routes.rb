@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'admin/panel'
+  get 'admin/index'
   resources :requests
   resources :request_types
   get 'home/index'

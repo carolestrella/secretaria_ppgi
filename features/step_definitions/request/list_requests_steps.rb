@@ -1,48 +1,82 @@
-Dado /^Eu esteja cadastrado como administrador, com nome: {Name}, email: {Email}, senha: {Password}, cargo: {Role} e registro: {Registration}$/ do |Name, Email, Pasword, Role, Registration|
+# Dado("que eu esteja cadastrado como administrador, com nome: {Name}, email: {Email}, senha: {Password}, cargo: {Role} e registro: {Registration}") do |Name, Email, Pasword, Role, Registration|
+#     pending
+# end
+
+# E("que eu esteja autenticado como {Role}") do |Role|
+#     pending
+# end
+
+# E("que eu esteja na página inicial") do
+#     visit(root_path)
+# end
+
+# E("eu clicar no link do painel de administrador") do
+#     pending
+# end
+
+# E("eu clicar em na lista de solicitações") do
+#     pending
+# end
+
+# Então("eu devo estar em uma página com uma tabela mostrando os dados ordenados") do
+#     pending
+# end
+
+  Dado('que eu esteja cadastrado como admin') do
     @adm = {
-    Name: 'Administrador',
-    Email: 'admin@admin.com',
-    Password: 'admin123',
-    Role: "admin",
-    Registration: "000000000"
-  }
-  Admin.create!(@adm)
-end
+      id: '10',
+      full_name: 'Administrador2',
+      email: 'admin@admin2.com',
+      password: 'admin1234',
+      role: "administrator",
+      registration: "000000000"
+    }
+    User.create!(@adm)
+  end
 
-E /^Eu esteja autenticado como administrador $/ do
-    @admin = Admin.find_by_email('admin@admin.com')
-end
 
-E /^Eu esteja na página inicial $/ do |root_path|
-    visit path_to(root_path)
-end
-
-E /^Eu clico em ([^"]*)" $/ do |adminPanel_button|
-    click_button(adminPanel_button)
-end
-
-Então /^Eu devo estar na pagina (.+) $/ do |admin_path|
-    current_path = URI.parse(current_path).path
-    if current_path.respond_to? :should
-        current_path.should == path_to(admin_path)
-    else
-        assert_equal path_to(admin_path), current_path
+  E('que esteja autenticado com email: {string} e senha: {string}') do |email,password|
+    visit(new_user_session_path)
+    fill_in "user[email]", with: email
+    fill_in "user[password]", with: password
+    click_button("Log in")
+  end
+  
+  E('que esteja na home page') do
+    if(!expect(page).to have_text("Usuário atual"))
+      visit(root_path)
     end
-end
+  end
 
-E /^Eu clico em ([^"]*") $/ do |showRequestsList_button|
-    click_button(showRequestsList_button)
-end
-
-Então /^Eu devo estar em uma página com uma tabela mostrando os dados ordenados $/ do |requests_path, table|
-    data = table.hashes
-    current_path = URI.parse(current_path).path
-    if current_path.respond_to? :should
-        current_path.should == path_to(requests_path)
-        on current_path do |pagina|
-            data.each { |_k, v| puts v }
-        end
-    else
-        assert_equal path_to(requests_path), current_path
+  E('eu clicar no link do painel de administrador') do
+    click_link("Painel de Administrador")
+  end
+  
+  E('eu clicar em na lista de solicitações') do
+    if(!expect(page).to have_text("Painel do Administrador"))
+      visit(admin_panel_path)
     end
-end
+    click_link("Mostrar lista de Requisições")
+  end
+  
+  Dado('que Lista de Solicitações aparece adequadamente') do
+    expect(page).to have_text("Lista de Requisições")
+  end
+
+  E('exista a Solicitação {string}') do |documents|
+    @requestType = {
+      id: '10',
+      title: 'Diaria'
+    }
+    @request = {
+      user_id: '10',
+      request_type_id: '10',
+      documents: 'teste'
+    }
+    RequestType.create!(@requestType)
+    Request.create!(@request)
+  end
+  
+  Então('eu devo estar em uma página com uma tabela mostrando os dados ordenados') do |table|
+    table_results = page.find('#tableResults')
+  end

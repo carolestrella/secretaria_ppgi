@@ -107,3 +107,7 @@ Então('eu devo estar em uma página confirmando a solicitação') do
   confirm_page = page.has_css?("#confirm_solicitacao")
   expect(confirm_page).to be true
 end
+
+Se('Não coloco uma período válido e é inviável fazer solicitações') do
+  pending
+end

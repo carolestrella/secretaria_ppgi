@@ -28,9 +28,10 @@ Funcionalidade: Solicitar passagens
     | solicitation | name |
     | period | 30/10/2020 - 01/11/2020 |
 
-    E eu preencho os dados 
-    Então eu devo estar em uma página confirmando a solicitação
+  Cenário: Não é possivel solicitar passagens
+    Dado a página de solicitação de passagens seja carregada corretamente 
+    E não é possível fazer uma solicitação de passagens para o período escolhido
+    Então vejo uma mensagem "Não é possivel solicitar passagens para o período"
 
-  Cenário:
-    Não é possível fazer uma solicitação de passagens para o período escolhido
-    Não há dados cadastrados para o usuário fazer uma solicitação e receber auxílio
+    Dado não há dados cadastrados para o usuário fazer uma solicitação e receber auxílio
+    Então vejo uma mensagem "Erro: Dados invalidos"

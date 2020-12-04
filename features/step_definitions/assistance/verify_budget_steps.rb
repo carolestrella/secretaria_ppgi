@@ -1,41 +1,51 @@
 #-------------------- Contexto --#
-Dado /^Eu esteja cadastrado como administrador, com nome: {Name}, email: {Email}, senha: {Password}, cargo: {Role} e registro: {Registration}$/ do |Name, Email, Pasword, Role, Registration|
-  @adm = {
-    Name: 'Administrador',
-    Email: 'admin@admin.com',
-    Password: 'admin123',
-    Role: "admin",
-    Registration: "000000000"
-  }
-  Admin.create!(@adm)
+Dado("que eu esteja cadastrado como administrador, com o email {string} e a senha {string}") do |email, password|
+  @email = email
+  @password = password
+  valid_email = @email.eql? "admin@admin.com"
+  valid_psswd = @password.eql? "123456"
+  valid_user = valid_email && valid_psswd
+  expect(valid_user).to be true
+end
+ 
+E("que eu esteja autenticado com o email {string} e a senha {string}") do |email, password|
+  auth = @email.eql? email
+  auth2 = @password.eql? password
+  authentication = auth && auth2
+  expect(authentication).to be true
 end
 
-E /^Eu esteja autenticado como administrador do
-  @admin = Admin.find_by_email('admin@admin.com')
+E("que esteja na pagina inicial") do
+  visit(root_path)
 end
 
-E /^Eu esteja na (.+)$/ do |root_path|
-  visit path_to(root_path)
-end
-
-Quando /^Eu clico em ([^"]*)"$/ do |button|
-  click_button(button)
+E("que eu clique no botão Verificar Orçamento") do
+  click_button "Verificar Orçamento"
 end
 
 #-------------------- Cenário feliz --#
-Então /^Eu devo estar na página (.+)$/ do |budget_index|
-  current_path = URI.parse(current_url).path
-  if current_path.respond_to? :should
-    current_path.should == path_to(budget_index)
-  else
-    assert_equal path_to(prazos_index), current_path
-  end
+Dado("que a página é carregada corretamente") do
+  pending
+end
+
+E("que eu tenha {float} de orçamento disponível") do |value|
+  @value = value
+  budget = @value > 0
+  expect(budget).to be true
 end
  
-Então /^Eu devo ver ([^"]*)"$/ do |value|
-  if page.respond_to? :should
-    page.should have_content(value)
-  else
-    assert page.has_content?(value)
-  end
+Então("o valor {float} é exibido") do |value|
+  same_val = @value.eql? value
+  expect(same_val).to be true
+end
+
+#-------------------- Cenário triste --#
+E("um valor diferente de {float} é exibido") do |value|
+  dif_val = @value.eql? value
+  expect(dif_val).to be false
+end
+
+Então("uma mensagem de erro deve ser exibida") do
+  alert = find("#error_msg")
+  expect(alert).to be true
 end

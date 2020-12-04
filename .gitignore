@@ -30,3 +30,5 @@
 .solargraph.yml
 
 /config/database.yml
+
+.Gemfile.lock
