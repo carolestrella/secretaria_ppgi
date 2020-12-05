@@ -1,5 +1,5 @@
 #-------------------- Contexto --#
-Dado("que eu esteja cadastrado como administrador, com o email {string} e a senha {string}") do |email, password|
+Dado("que eu esteja cadastrado como administrador, com o email {string}") do |email|
   @user = User.find_by_email(email)
 
   expect(@user.nil?).to eq(false)

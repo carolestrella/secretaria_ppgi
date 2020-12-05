@@ -130,7 +130,7 @@
 
           
           <div class="method-source-code" id="index-source">
-            <pre><span class="ruby-comment"># File app/controllers/admin_controller.rb, line 6</span>
+            <pre><span class="ruby-comment"># File app/controllers/admin_controller.rb, line 9</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -156,15 +156,16 @@
 
         <div class="method-description">
           
-          
+          <p>Apenas uma view para redirecionar a lista de Requisições</p>
           
           
 
           
           <div class="method-source-code" id="panel-source">
-            <pre><span class="ruby-comment"># File app/controllers/admin_controller.rb, line 2</span>
+            <pre><span class="ruby-comment"># File app/controllers/admin_controller.rb, line 4</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">panel</span>
-  <span class="ruby-ivar">@requests</span> = <span class="ruby-constant">Request</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@bookings</span> = <span class="ruby-constant">Booking</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@tickets</span> = <span class="ruby-constant">Ticket</span>.<span class="ruby-identifier">all</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           

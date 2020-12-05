@@ -6,7 +6,7 @@ Funcionalidade: Definir os requisitos para solicitação de auxílio
   Eu gostaria de disponibilizar os requisitos para fazer uma solicitação
 
   Contexto:
-    Dado que eu esteja cadastrado como administrador para definir requisitos de solicitações, com o email 'admin@admin.com' e a senha '123456'
+    Dado que eu esteja cadastrado como administrador, com o email 'admin@admin.com'
     E que eu esteja autenticado com o email 'admin@admin.com' e a senha 'admin123'
     E que esteja na página inicial
     E eu clicar no botão "Editar requisitos de solicitação"

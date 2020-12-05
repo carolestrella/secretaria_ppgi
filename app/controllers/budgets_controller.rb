@@ -4,21 +4,41 @@ class BudgetsController < ApplicationController
   #
   # GET /budgets.json
   #
-  # Returns a list containing all budgets in the system.
+  # @return [Array[Budget]] - Array contendo todos os budgets (orçamentos)
   #
-  # However, it's important to notice that the system is designed to allow only 1 budget instance, 
-  # as multiple budgets would lead to inconsistencies.
+  # Observação: o sistema mantém somente um budget cadastrado. Assim, quando um novo budget é inserido, o antigo é deletado.
   def index
     @budgets = Budget.all
   end
 
+  ##
   # GET /budgets/new
+  #
+  # @return [Budget] - Uma instância vazia de budget.
   def new
     @budget = Budget.new
   end
 
+  ##
   # POST /budgets
+  #
   # POST /budgets.json
+  #
+  # O método cria um novo orçamento. Além disso, deleta todos orçamentos previamente existentes.
+  #
+  # @param [Float] value - Valor do orçamento
+  #
+  # Criação bem sucedida:
+  #
+  #   @return {status: 200, notice: 'Budget was successfully created'}
+  #
+  #   Efeitos colaterais: o registro é salvo na tabela 'budget', e o usuario é redirecionado para '/budgets
+  #
+  # Criação mal sucedida:
+  #
+  #   @return JSON {status: 422, errors: {...}}
+  #
+  #   Efeitos colaterais: o usuário é redirecionado para a rota '/budgets/new' e o erro retornado é exibido em tela.
   def create
     @budgets = Budget.all
 
@@ -40,12 +60,8 @@ class BudgetsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_budget
-      @budget = Budget.find(params[:id])
-    end
-
-    # Only allow a list of trusted parameters through.
+    ##
+    # Parâmetros recebidos pelo método.
     def budget_params
       params.require(:budget).permit(:value)
     end

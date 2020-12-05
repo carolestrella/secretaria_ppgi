@@ -1,10 +1,4 @@
 #-------------------- Contexto --#
-Dado("que eu esteja cadastrado como administrador para definir requisitos de solicitações, com o email {string} e a senha {string}") do |email, password|
-  @user = User.find_by_email(email)
-
-  expect(@user.nil?).to eq(false)
-end
-
 E("que eu esteja autenticado com o email {string} e a senha {string}") do |email, password|
   visit '/users/sign_in'
   fill_in 'user_email', :with => email

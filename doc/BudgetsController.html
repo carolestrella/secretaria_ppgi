@@ -126,13 +126,31 @@
 
         <div class="method-description">
           
-          <p>POST /budgets POST /budgets.json</p>
+          <p>POST /budgets</p>
+
+<p>POST /budgets.json</p>
+
+<p>O método cria um novo orçamento. Além disso, deleta todos orçamentos previamente existentes.</p>
+
+<p>@param [Float] value - Valor do orçamento</p>
+
+<p>Criação bem sucedida:</p>
+
+<pre>@return {status: 200, notice: &#39;Budget was successfully created&#39;}
+
+Efeitos colaterais: o registro é salvo na tabela &#39;budget&#39;, e o usuario é redirecionado para &#39;/budgets</pre>
+
+<p>Criação mal sucedida:</p>
+
+<pre>@return JSON {status: 422, errors: {...}}
+
+Efeitos colaterais: o usuário é redirecionado para a rota &#39;/budgets/new&#39; e o erro retornado é exibido em tela.</pre>
           
           
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/budgets_controller.rb, line 22</span>
+            <pre><span class="ruby-comment"># File app/controllers/budgets_controller.rb, line 42</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">create</span>
   <span class="ruby-ivar">@budgets</span> = <span class="ruby-constant">Budget</span>.<span class="ruby-identifier">all</span>
 
@@ -179,15 +197,15 @@
 
 <p>GET /budgets.json</p>
 
-<p>Returns a list containing all budgets in the system.</p>
+<p>@return [<a href="Budget">Array</a>] - Array contendo todos os budgets (orçamentos)</p>
 
-<p>However, it&#39;s important to notice that the system is designed to allow only 1 budget instance,  as multiple budgets would lead to inconsistencies.</p>
+<p>Observação: o sistema mantém somente um budget cadastrado. Assim, quando um novo budget é inserido, o antigo é deletado.</p>
           
           
 
           
           <div class="method-source-code" id="index-source">
-            <pre><span class="ruby-comment"># File app/controllers/budgets_controller.rb, line 11</span>
+            <pre><span class="ruby-comment"># File app/controllers/budgets_controller.rb, line 10</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
   <span class="ruby-ivar">@budgets</span> = <span class="ruby-constant">Budget</span>.<span class="ruby-identifier">all</span>
 <span class="ruby-keyword">end</span></pre>
@@ -215,12 +233,14 @@
         <div class="method-description">
           
           <p>GET /budgets/new</p>
+
+<p>@return [Budget] - Uma instância vazia de budget.</p>
           
           
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File app/controllers/budgets_controller.rb, line 16</span>
+            <pre><span class="ruby-comment"># File app/controllers/budgets_controller.rb, line 18</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">new</span>
   <span class="ruby-ivar">@budget</span> = <span class="ruby-constant">Budget</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>

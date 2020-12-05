@@ -8,8 +8,6 @@ Rails.application.routes.draw do
   resources :requirements, only: [:new, :index, :create]
   get 'admin/panel'
   get 'admin/index'
-  resources :requests
-  resources :request_types
   get 'home/index'
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
