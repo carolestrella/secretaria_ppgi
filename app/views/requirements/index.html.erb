@@ -1,0 +1,13 @@
+<p id="notice"><% notice %></p>
+
+<h1>Requisitos de solicitação</h1>
+
+<h3>Os requisitos atuais para solicitações de passagens e diárias são:</h3>
+<% @requirements.each do |requirement| %>
+  <%= requirement.requirements %></td>
+<% end %>
+
+<br>
+<br>
+
+<%= link_to 'Redefinir os requisitos de solicitações', new_requirement_path %>

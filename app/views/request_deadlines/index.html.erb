@@ -1,0 +1,13 @@
+<p id="notice"><% notice %></p>
+
+<h1>Data limite para solicitações</h1>
+
+<h3>O prazo atual para solicitações de passagens e diárias é:</h3>
+<% @request_deadlines.each do |r| %>
+  <%= r.deadline %>
+<% end %>
+
+<br>
+<br>
+
+<%= link_to 'Alterar o prazo para solicitação', new_request_deadline_path %>

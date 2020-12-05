@@ -1,0 +1,22 @@
+<% if user_signed_in? and current_user.role == 'administrator'%>
+  <h1>Definir requisitos de solicitação</h1>
+  <br>
+
+  <h3>Edite o campo abaixo para modificar os requisitos de solicitações</h3>
+  <%= form_for @requirement do |form| %>
+    <% if @requirement.errors.any? %>
+      <h4 id="error_msg" style="color: red">Ocorreu um erro ao salvar os requisitos.</h4 id="error_msg">
+      <br>
+    <% end %>
+    <%= form.text_area :requirements, id: "requirement_text", value: @all_requirements.blank? == false ? @all_requirements[0].requirements : '' %>
+    <br>
+    <%= form.submit "Definir requisitos", id: "edit_requirements"%>
+  <% end %>
+
+  <br>
+<%= link_to 'Voltar', requirements_path %>
+<% else %>
+  <script type="text/javascript">
+    window.location.href="/users/sign_in" 
+  </script>
+<% end %>

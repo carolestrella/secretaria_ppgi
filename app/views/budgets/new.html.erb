@@ -1,0 +1,9 @@
+<% if user_signed_in? and current_user.role == 'administrator'%>    
+  <h1>New Budget</h1>
+
+  <%= render 'form', budget: @budget %>
+
+  <%= link_to 'Back', budgets_path %>
+<% else %>
+  <h1>Unauthorized</h1>
+<% end %>

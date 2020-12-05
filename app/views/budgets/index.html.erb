@@ -1,0 +1,20 @@
+<% if user_signed_in? and current_user.role == 'administrator'%>  
+  <p id="notice"><%= notice %></p>
+
+  <h1>Orçamento</h1>
+
+  <% if @budgets.count == 0 %>
+    Não há orçamento cadastrado.
+  <% else %>
+    <h3>Valor disponível</h3>
+    <% @budgets.each do |budget|%>  
+      <h2 style="color:deeppink;"><%= budget.value %></h2>
+    <% end %>
+  <% end %>
+
+  <br>
+
+  <%= link_to 'Cadastrar orçamento atualizado', new_budget_path, style:"color:#3333ff;" %>
+<% else %>
+  <h1>Unauthorized</h1>
+<% end %>

@@ -1,0 +1,35 @@
+<% if user_signed_in? %>
+  <h1>Painel</h1>
+<% else %>
+  <h1>Página inicial</h1>
+<% end %>
+
+<% if user_signed_in? %>
+  <h3>Usuário atual</h3>
+  <p><strong>Nome: </strong><%= current_user.full_name %></p>
+  <p><strong>Email: </strong><%= current_user.email %></p>
+  <p><strong>Cargo: </strong><%= current_user.role %></p>
+
+  <% if current_user.role == 'administrator'%>
+    <a href=<%= admin_panel_path %>>
+      Painel de Administrador
+    </a><br>
+    
+    <%= button_to "Editar requisitos de solicitação", '/requirements/new', method: :get, id: 'edit_requirements' %>
+    <br>
+    <%= button_to "Verificar orçamento", '/budgets', method: :get, id: 'verify_budget_button' %>
+    <br>
+    <%= button_to "Editar data limite para solicitações", '/request_deadlines/new', method: :get, id: 'edit_deadline_button' %>
+    <br>
+  <% end %>
+
+  <%= button_to "Solicitar diárias", '/bookings/new', method: :get, id: 'request_diaria' %>
+  <br>
+  <%= button_to "Solicitar passagem", '/tickets/new', method: :get, id: 'request_ticket' %>
+  <br>
+  <%= link_to "Sair", destroy_user_session_path, method: :delete %>
+<% else %>
+  <h3>Entre para acessar o sistema!</h3>
+  <p>Você também pode se registrar <small>ou pegar uma conta no arquivo db/seeds.rb</small></p>
+  <%= link_to "Entrar", new_user_session_path %>
+<% end %>

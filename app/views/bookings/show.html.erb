@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data entrada:</strong>
+  <%= @booking.data_entrada %>
+</p>
+
+<p>
+  <strong>Date saida:</strong>
+  <%= @booking.data_saida %>
+</p>
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %>

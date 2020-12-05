@@ -1,0 +1,22 @@
+<%= form_with(model: request_deadline, local: true) do |form| %>
+  <% if request_deadline.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(request_deadline.errors.count, "error") %> prohibited this request_deadline from being saved:</h2>
+
+      <ul>
+      <% request_deadline.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :deadline %>
+    <%= form.datetime_select :deadline %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit value: "Definir prazo" %>
+  </div>
+<% end %>
