@@ -1,27 +1,3 @@
-# Dado("que eu esteja cadastrado como administrador, com nome: {Name}, email: {Email}, senha: {Password}, cargo: {Role} e registro: {Registration}") do |Name, Email, Pasword, Role, Registration|
-#     pending
-# end
-
-# E("que eu esteja autenticado como {Role}") do |Role|
-#     pending
-# end
-
-# E("que eu esteja na página inicial") do
-#     visit(root_path)
-# end
-
-# E("eu clicar no link do painel de administrador") do
-#     pending
-# end
-
-# E("eu clicar em na lista de solicitações") do
-#     pending
-# end
-
-# Então("eu devo estar em uma página com uma tabela mostrando os dados ordenados") do
-#     pending
-# end
-
   Dado('que eu esteja cadastrado como admin') do
     @adm = {
       id: '10',
@@ -79,4 +55,33 @@
   
   Então('eu devo estar em uma página com uma tabela mostrando os dados ordenados') do |table|
     table_results = page.find('#tableResults')
+  end
+
+  Dado("que esteja cadastrado como usuario") do
+    visit(root_path)
+    click_link("Sair")
+    @user = {
+      id: '11',
+      full_name: 'usuario',
+      email: 'user@email.com',
+      password: '123456',
+      role: "student",
+      registration: "000000000"
+    }
+    User.create!(@user)
+  end
+
+  Dado('que esteja autenticado e não seja administrador de email: {string} e senha: {string}') do |email,senha|
+    visit(new_user_session_path)
+    fill_in "user[email]", with: email
+    fill_in "user[password]", with: senha
+    click_button("Log in")
+  end
+
+  E ("tente acessar pagina de que lista as requisições") do
+    visit(requests_path)
+  end
+
+  Então ("a tela deve mostrando a mensagem {string}") do |mensagem|
+    expect(page).to have_text(mensagem)
   end
