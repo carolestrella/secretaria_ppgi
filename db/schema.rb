@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_04_235248) do
+ActiveRecord::Schema.define(version: 2020_12_05_032807) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,22 +42,6 @@ ActiveRecord::Schema.define(version: 2020_12_04_235248) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "request_types", force: :cascade do |t|
-    t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "requests", force: :cascade do |t|
-    t.bigint "request_type_id"
-    t.bigint "user_id"
-    t.string "documents"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["request_type_id"], name: "index_requests_on_request_type_id"
-    t.index ["user_id"], name: "index_requests_on_user_id"
-  end
-
   create_table "requirements", force: :cascade do |t|
     t.string "requirements"
     t.datetime "created_at", null: false
@@ -87,6 +71,4 @@ ActiveRecord::Schema.define(version: 2020_12_04_235248) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "requests", "request_types"
-  add_foreign_key "requests", "users"
 end
