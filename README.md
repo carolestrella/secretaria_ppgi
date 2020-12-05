@@ -23,6 +23,6 @@
 
 
 ## Complexidade ciclomática
-### o teste ciclomático pode ser achado no arquivo
+### O teste ciclomático pode ser achado no arquivo
 > ./detailed/index_cyclo.html
 ## ABC Score

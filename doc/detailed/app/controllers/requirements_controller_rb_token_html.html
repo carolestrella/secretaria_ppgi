@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>requirements_controller.rb_token.html - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+  var index_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/navigation.js" defer></script>
+<script src="../../../js/search.js" defer></script>
+<script src="../../../js/search_index.js" defer></script>
+<script src="../../../js/searcher.js" defer></script>
+<script src="../../../js/darkfish.js" defer></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../README_md.html">README</a>
+  
+    <li><a href="../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../app/assets/config/manifest_js.html">manifest.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/admin_coffee.html">admin.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/bookings_coffee.html">bookings.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/budgets_coffee.html">budgets.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/cable_js.html">cable.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/home_coffee.html">home.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/request_deadlines_coffee.html">request_deadlines.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/request_types_coffee.html">request_types.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/requests_coffee.html">requests.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/requirements_coffee.html">requirements.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/tickets_coffee.html">tickets.coffee</a>
+  
+    <li><a href="../../../app/assets/stylesheets/admin_scss.html">admin.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../app/assets/stylesheets/bookings_scss.html">bookings.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/budgets_scss.html">budgets.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/home_scss.html">home.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/request_deadlines_scss.html">request_deadlines.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/request_types_scss.html">request_types.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/requests_scss.html">requests.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/requirements_scss.html">requirements.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/scaffolds_scss.html">scaffolds.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/tickets_scss.html">tickets.scss</a>
+  
+    <li><a href="../../../app/channels/application_cable/channel_rb_cyclo_html.html">channel.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/channels/application_cable/channel_rb_token_html.html">channel.rb_token.html</a>
+  
+    <li><a href="../../../app/channels/application_cable/connection_rb_cyclo_html.html">connection.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/channels/application_cable/connection_rb_token_html.html">connection.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/admin_controller_rb_cyclo_html.html">admin_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/controllers/admin_controller_rb_token_html.html">admin_controller.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/application_controller_rb_cyclo_html.html">application_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/controllers/application_controller_rb_token_html.html">application_controller.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/bookings_controller_rb_cyclo_html.html">bookings_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/controllers/bookings_controller_rb_token_html.html">bookings_controller.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/budgets_controller_rb_cyclo_html.html">budgets_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/controllers/budgets_controller_rb_token_html.html">budgets_controller.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/home_controller_rb_cyclo_html.html">home_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/controllers/home_controller_rb_token_html.html">home_controller.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/request_deadlines_controller_rb_cyclo_html.html">request_deadlines_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/controllers/request_deadlines_controller_rb_token_html.html">request_deadlines_controller.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/request_types_controller_rb_cyclo_html.html">request_types_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/controllers/request_types_controller_rb_token_html.html">request_types_controller.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/requests_controller_rb_cyclo_html.html">requests_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/controllers/requests_controller_rb_token_html.html">requests_controller.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/requirements_controller_rb_cyclo_html.html">requirements_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/controllers/requirements_controller_rb_token_html.html">requirements_controller.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/tickets_controller_rb_cyclo_html.html">tickets_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/controllers/tickets_controller_rb_token_html.html">tickets_controller.rb_token.html</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/application_controller_html.html">application_controller.html</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/javascripts/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/javascripts/highcharts_src-4_0_1_js.html">highcharts.src-4.0.1.js</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/javascripts/jquery_filtertable_min_js.html">jquery.filtertable.min.js</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/javascripts/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/javascripts/jquery_scrollTo_min_js.html">jquery.scrollTo.min.js</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/javascripts/jquery_tablesorter_js.html">jquery.tablesorter.js</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/javascripts/jquery_tablesorter_min_js.html">jquery.tablesorter.min.js</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/javascripts/jquery_timeago_js.html">jquery.timeago.js</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/javascripts/prettify_js.html">prettify.js</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/stylesheets/bootstrap_min_css.html">bootstrap.min.css</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/stylesheets/font-awesome_min_css.html">font-awesome.min.css</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/stylesheets/prettify_css.html">prettify.css</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/assets/stylesheets/prettify_custom_theme_css.html">prettify.custom_theme.css</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/code_index_html.html">code_index.html</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/home_controller_html.html">home_controller.html</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/overview_html.html">overview.html</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/request_types_controller_html.html">request_types_controller.html</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/requests_controller_html.html">requests_controller.html</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/simple_cov_index_html.html">simple_cov_index.html</a>
+  
+    <li><a href="../../../app/controllers/tmp/rubycritic/smells_index_html.html">smells_index.html</a>
+  
+    <li><a href="../../../app/helpers/admin_helper_rb_cyclo_html.html">admin_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/helpers/admin_helper_rb_token_html.html">admin_helper.rb_token.html</a>
+  
+    <li><a href="../../../app/helpers/application_helper_rb_cyclo_html.html">application_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/helpers/application_helper_rb_token_html.html">application_helper.rb_token.html</a>
+  
+    <li><a href="../../../app/helpers/bookings_helper_rb_cyclo_html.html">bookings_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/helpers/bookings_helper_rb_token_html.html">bookings_helper.rb_token.html</a>
+  
+    <li><a href="../../../app/helpers/budgets_helper_rb_cyclo_html.html">budgets_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/helpers/budgets_helper_rb_token_html.html">budgets_helper.rb_token.html</a>
+  
+    <li><a href="../../../app/helpers/home_helper_rb_cyclo_html.html">home_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/helpers/home_helper_rb_token_html.html">home_helper.rb_token.html</a>
+  
+    <li><a href="../../../app/helpers/request_deadlines_helper_rb_cyclo_html.html">request_deadlines_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/helpers/request_deadlines_helper_rb_token_html.html">request_deadlines_helper.rb_token.html</a>
+  
+    <li><a href="../../../app/helpers/request_types_helper_rb_cyclo_html.html">request_types_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/helpers/request_types_helper_rb_token_html.html">request_types_helper.rb_token.html</a>
+  
+    <li><a href="../../../app/helpers/requests_helper_rb_cyclo_html.html">requests_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/helpers/requests_helper_rb_token_html.html">requests_helper.rb_token.html</a>
+  
+    <li><a href="../../../app/helpers/requirements_helper_rb_cyclo_html.html">requirements_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/helpers/requirements_helper_rb_token_html.html">requirements_helper.rb_token.html</a>
+  
+    <li><a href="../../../app/helpers/tickets_helper_rb_cyclo_html.html">tickets_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/helpers/tickets_helper_rb_token_html.html">tickets_helper.rb_token.html</a>
+  
+    <li><a href="../../../app/jobs/application_job_rb_cyclo_html.html">application_job.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/jobs/application_job_rb_token_html.html">application_job.rb_token.html</a>
+  
+    <li><a href="../../../app/mailers/application_mailer_rb_cyclo_html.html">application_mailer.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/mailers/application_mailer_rb_token_html.html">application_mailer.rb_token.html</a>
+  
+    <li><a href="../../../app/models/application_record_rb_cyclo_html.html">application_record.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/models/application_record_rb_token_html.html">application_record.rb_token.html</a>
+  
+    <li><a href="../../../app/models/booking_rb_cyclo_html.html">booking.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/models/booking_rb_token_html.html">booking.rb_token.html</a>
+  
+    <li><a href="../../../app/models/budget_rb_cyclo_html.html">budget.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/models/budget_rb_token_html.html">budget.rb_token.html</a>
+  
+    <li><a href="../../../app/models/request_rb_cyclo_html.html">request.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/models/request_rb_token_html.html">request.rb_token.html</a>
+  
+    <li><a href="../../../app/models/request_deadline_rb_cyclo_html.html">request_deadline.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/models/request_deadline_rb_token_html.html">request_deadline.rb_token.html</a>
+  
+    <li><a href="../../../app/models/request_type_rb_cyclo_html.html">request_type.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/models/request_type_rb_token_html.html">request_type.rb_token.html</a>
+  
+    <li><a href="../../../app/models/requirement_rb_cyclo_html.html">requirement.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/models/requirement_rb_token_html.html">requirement.rb_token.html</a>
+  
+    <li><a href="../../../app/models/ticket_rb_cyclo_html.html">ticket.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/models/ticket_rb_token_html.html">ticket.rb_token.html</a>
+  
+    <li><a href="../../../app/models/user_rb_cyclo_html.html">user.rb_cyclo.html</a>
+  
+    <li><a href="../../../app/models/user_rb_token_html.html">user.rb_token.html</a>
+  
+    <li><a href="../../../app/views/admin/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/admin/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/admin/panel_html_erb_cyclo_html.html">panel.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/admin/panel_html_erb_token_html.html">panel.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/bookings/_booking_json_jbuilder.html">_booking.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/bookings/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/bookings/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/bookings/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/bookings/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/bookings/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/bookings/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/bookings/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/bookings/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/bookings/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/bookings/show_html_erb_cyclo_html.html">show.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/bookings/show_html_erb_token_html.html">show.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/bookings/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/budgets/_budget_json_jbuilder.html">_budget.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/budgets/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/budgets/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/budgets/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/budgets/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/budgets/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/budgets/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/budgets/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/confirmations/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/confirmations/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/mailer/confirmation_instructions_html_erb_cyclo_html.html">confirmation_instructions.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/mailer/confirmation_instructions_html_erb_token_html.html">confirmation_instructions.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/mailer/email_changed_html_erb_cyclo_html.html">email_changed.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/mailer/email_changed_html_erb_token_html.html">email_changed.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/mailer/password_change_html_erb_cyclo_html.html">password_change.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/mailer/password_change_html_erb_token_html.html">password_change.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/mailer/reset_password_instructions_html_erb_cyclo_html.html">reset_password_instructions.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/mailer/reset_password_instructions_html_erb_token_html.html">reset_password_instructions.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/mailer/unlock_instructions_html_erb_cyclo_html.html">unlock_instructions.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/mailer/unlock_instructions_html_erb_token_html.html">unlock_instructions.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/passwords/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/passwords/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/passwords/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/passwords/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/registrations/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/registrations/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/registrations/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/registrations/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/sessions/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/sessions/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/shared/_error_messages_html_erb_cyclo_html.html">_error_messages.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/shared/_error_messages_html_erb_token_html.html">_error_messages.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/shared/_links_html_erb_cyclo_html.html">_links.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/shared/_links_html_erb_token_html.html">_links.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/devise/unlocks/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/devise/unlocks/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/home/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/home/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/layouts/application_html_erb_cyclo_html.html">application.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/layouts/application_html_erb_token_html.html">application.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/layouts/mailer_html_erb_cyclo_html.html">mailer.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/layouts/mailer_html_erb_token_html.html">mailer.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/layouts/mailer_text_erb_cyclo_html.html">mailer.text.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/layouts/mailer_text_erb_token_html.html">mailer.text.erb_token.html</a>
+  
+    <li><a href="../../../app/views/request_deadlines/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/request_deadlines/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/request_deadlines/_request_deadline_json_jbuilder.html">_request_deadline.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/request_deadlines/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/request_deadlines/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/request_deadlines/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/request_deadlines/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/request_deadlines/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/request_types/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/request_types/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/request_types/_request_type_json_jbuilder.html">_request_type.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/request_types/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/request_types/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/request_types/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/request_types/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/request_types/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/request_types/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/request_types/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/request_types/show_html_erb_cyclo_html.html">show.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/request_types/show_html_erb_token_html.html">show.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/request_types/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/requests/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/requests/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/requests/_request_json_jbuilder.html">_request.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/requests/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/requests/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/requests/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/requests/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/requests/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/requests/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/requests/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/requests/show_html_erb_cyclo_html.html">show.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/requests/show_html_erb_token_html.html">show.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/requests/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/requirements/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/requirements/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/requirements/_requirement_json_jbuilder.html">_requirement.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/requirements/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/requirements/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/requirements/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/requirements/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/requirements/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/tickets/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/tickets/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/tickets/_ticket_json_jbuilder.html">_ticket.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/tickets/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/tickets/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/tickets/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/tickets/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/tickets/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/tickets/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/tickets/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/tickets/show_html_erb_cyclo_html.html">show.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../app/views/tickets/show_html_erb_token_html.html">show.html.erb_token.html</a>
+  
+    <li><a href="../../../app/views/tickets/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../config/application_rb_cyclo_html.html">application.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/application_rb_token_html.html">application.rb_token.html</a>
+  
+    <li><a href="../../../config/boot_rb_cyclo_html.html">boot.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/boot_rb_token_html.html">boot.rb_token.html</a>
+  
+    <li><a href="../../../config/credentials_yml_enc.html">credentials.yml.enc</a>
+  
+    <li><a href="../../../config/environment_rb_cyclo_html.html">environment.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/environment_rb_token_html.html">environment.rb_token.html</a>
+  
+    <li><a href="../../../config/environments/development_rb_cyclo_html.html">development.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/environments/development_rb_token_html.html">development.rb_token.html</a>
+  
+    <li><a href="../../../config/environments/production_rb_cyclo_html.html">production.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/environments/production_rb_token_html.html">production.rb_token.html</a>
+  
+    <li><a href="../../../config/environments/test_rb_cyclo_html.html">test.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/environments/test_rb_token_html.html">test.rb_token.html</a>
+  
+    <li><a href="../../../config/initializers/application_controller_renderer_rb_cyclo_html.html">application_controller_renderer.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/initializers/application_controller_renderer_rb_token_html.html">application_controller_renderer.rb_token.html</a>
+  
+    <li><a href="../../../config/initializers/assets_rb_cyclo_html.html">assets.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/initializers/assets_rb_token_html.html">assets.rb_token.html</a>
+  
+    <li><a href="../../../config/initializers/backtrace_silencers_rb_cyclo_html.html">backtrace_silencers.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/initializers/backtrace_silencers_rb_token_html.html">backtrace_silencers.rb_token.html</a>
+  
+    <li><a href="../../../config/initializers/content_security_policy_rb_cyclo_html.html">content_security_policy.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/initializers/content_security_policy_rb_token_html.html">content_security_policy.rb_token.html</a>
+  
+    <li><a href="../../../config/initializers/cookies_serializer_rb_cyclo_html.html">cookies_serializer.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/initializers/cookies_serializer_rb_token_html.html">cookies_serializer.rb_token.html</a>
+  
+    <li><a href="../../../config/initializers/devise_rb_cyclo_html.html">devise.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/initializers/devise_rb_token_html.html">devise.rb_token.html</a>
+  
+    <li><a href="../../../config/initializers/filter_parameter_logging_rb_cyclo_html.html">filter_parameter_logging.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/initializers/filter_parameter_logging_rb_token_html.html">filter_parameter_logging.rb_token.html</a>
+  
+    <li><a href="../../../config/initializers/inflections_rb_cyclo_html.html">inflections.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/initializers/inflections_rb_token_html.html">inflections.rb_token.html</a>
+  
+    <li><a href="../../../config/initializers/mime_types_rb_cyclo_html.html">mime_types.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/initializers/mime_types_rb_token_html.html">mime_types.rb_token.html</a>
+  
+    <li><a href="../../../config/initializers/wrap_parameters_rb_cyclo_html.html">wrap_parameters.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/initializers/wrap_parameters_rb_token_html.html">wrap_parameters.rb_token.html</a>
+  
+    <li><a href="../../../config/puma_rb_cyclo_html.html">puma.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/puma_rb_token_html.html">puma.rb_token.html</a>
+  
+    <li><a href="../../../config/routes_rb_cyclo_html.html">routes.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/routes_rb_token_html.html">routes.rb_token.html</a>
+  
+    <li><a href="../../../config/spring_rb_cyclo_html.html">spring.rb_cyclo.html</a>
+  
+    <li><a href="../../../config/spring_rb_token_html.html">spring.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20191114162918_devise_create_users_rb_cyclo_html.html">20191114162918_devise_create_users.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20191114162918_devise_create_users_rb_token_html.html">20191114162918_devise_create_users.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20191114163205_add_info_to_users_rb_cyclo_html.html">20191114163205_add_info_to_users.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20191114163205_add_info_to_users_rb_token_html.html">20191114163205_add_info_to_users.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20201113005520_create_request_types_rb_cyclo_html.html">20201113005520_create_request_types.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20201113005520_create_request_types_rb_token_html.html">20201113005520_create_request_types.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20201113005619_create_requests_rb_cyclo_html.html">20201113005619_create_requests.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20201113005619_create_requests_rb_token_html.html">20201113005619_create_requests.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20201203170755_create_requirements_rb_cyclo_html.html">20201203170755_create_requirements.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20201203170755_create_requirements_rb_token_html.html">20201203170755_create_requirements.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20201203212607_create_budgets_rb_cyclo_html.html">20201203212607_create_budgets.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20201203212607_create_budgets_rb_token_html.html">20201203212607_create_budgets.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20201204172747_create_tickets_rb_cyclo_html.html">20201204172747_create_tickets.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20201204172747_create_tickets_rb_token_html.html">20201204172747_create_tickets.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20201204185313_add_user_id_to_tickets_rb_cyclo_html.html">20201204185313_add_user_id_to_tickets.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20201204185313_add_user_id_to_tickets_rb_token_html.html">20201204185313_add_user_id_to_tickets.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20201204190307_change_data_entrada_to_date_rb_cyclo_html.html">20201204190307_change_data_entrada_to_date.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20201204190307_change_data_entrada_to_date_rb_token_html.html">20201204190307_change_data_entrada_to_date.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20201204195343_create_request_deadlines_rb_cyclo_html.html">20201204195343_create_request_deadlines.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20201204195343_create_request_deadlines_rb_token_html.html">20201204195343_create_request_deadlines.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20201204220942_create_bookings_rb_cyclo_html.html">20201204220942_create_bookings.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20201204220942_create_bookings_rb_token_html.html">20201204220942_create_bookings.rb_token.html</a>
+  
+    <li><a href="../../../db/migrate/20201204235248_add_user_id_to_bookings_rb_cyclo_html.html">20201204235248_add_user_id_to_bookings.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/migrate/20201204235248_add_user_id_to_bookings_rb_token_html.html">20201204235248_add_user_id_to_bookings.rb_token.html</a>
+  
+    <li><a href="../../../db/schema_rb_cyclo_html.html">schema.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/schema_rb_token_html.html">schema.rb_token.html</a>
+  
+    <li><a href="../../../db/seeds_rb_cyclo_html.html">seeds.rb_cyclo.html</a>
+  
+    <li><a href="../../../db/seeds_rb_token_html.html">seeds.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/channels/application_cable/channel_rb_cyclo_html.html">channel.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/channels/application_cable/channel_rb_token_html.html">channel.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/channels/application_cable/connection_rb_cyclo_html.html">connection.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/channels/application_cable/connection_rb_token_html.html">connection.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/admin_controller_rb_cyclo_html.html">admin_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/admin_controller_rb_token_html.html">admin_controller.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/application_controller_rb_cyclo_html.html">application_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/application_controller_rb_token_html.html">application_controller.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/bookings_controller_rb_cyclo_html.html">bookings_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/bookings_controller_rb_token_html.html">bookings_controller.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/budgets_controller_rb_cyclo_html.html">budgets_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/budgets_controller_rb_token_html.html">budgets_controller.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/home_controller_rb_cyclo_html.html">home_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/home_controller_rb_token_html.html">home_controller.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/request_deadlines_controller_rb_cyclo_html.html">request_deadlines_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/request_deadlines_controller_rb_token_html.html">request_deadlines_controller.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/request_types_controller_rb_cyclo_html.html">request_types_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/request_types_controller_rb_token_html.html">request_types_controller.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/requests_controller_rb_cyclo_html.html">requests_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/requests_controller_rb_token_html.html">requests_controller.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/requirements_controller_rb_cyclo_html.html">requirements_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/requirements_controller_rb_token_html.html">requirements_controller.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/tickets_controller_rb_cyclo_html.html">tickets_controller.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/controllers/tickets_controller_rb_token_html.html">tickets_controller.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/admin_helper_rb_cyclo_html.html">admin_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/admin_helper_rb_token_html.html">admin_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/application_helper_rb_cyclo_html.html">application_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/application_helper_rb_token_html.html">application_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/bookings_helper_rb_cyclo_html.html">bookings_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/bookings_helper_rb_token_html.html">bookings_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/budgets_helper_rb_cyclo_html.html">budgets_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/budgets_helper_rb_token_html.html">budgets_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/home_helper_rb_cyclo_html.html">home_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/home_helper_rb_token_html.html">home_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/request_deadlines_helper_rb_cyclo_html.html">request_deadlines_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/request_deadlines_helper_rb_token_html.html">request_deadlines_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/request_types_helper_rb_cyclo_html.html">request_types_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/request_types_helper_rb_token_html.html">request_types_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/requests_helper_rb_cyclo_html.html">requests_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/requests_helper_rb_token_html.html">requests_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/requirements_helper_rb_cyclo_html.html">requirements_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/requirements_helper_rb_token_html.html">requirements_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/tickets_helper_rb_cyclo_html.html">tickets_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/helpers/tickets_helper_rb_token_html.html">tickets_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/jobs/application_job_rb_cyclo_html.html">application_job.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/jobs/application_job_rb_token_html.html">application_job.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/mailers/application_mailer_rb_cyclo_html.html">application_mailer.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/mailers/application_mailer_rb_token_html.html">application_mailer.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/models/application_record_rb_cyclo_html.html">application_record.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/models/application_record_rb_token_html.html">application_record.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/models/booking_rb_cyclo_html.html">booking.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/models/booking_rb_token_html.html">booking.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/models/budget_rb_cyclo_html.html">budget.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/models/budget_rb_token_html.html">budget.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/models/request_rb_cyclo_html.html">request.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/models/request_rb_token_html.html">request.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/models/request_deadline_rb_cyclo_html.html">request_deadline.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/models/request_deadline_rb_token_html.html">request_deadline.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/models/request_type_rb_cyclo_html.html">request_type.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/models/request_type_rb_token_html.html">request_type.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/models/requirement_rb_cyclo_html.html">requirement.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/models/requirement_rb_token_html.html">requirement.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/models/ticket_rb_cyclo_html.html">ticket.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/models/ticket_rb_token_html.html">ticket.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/models/user_rb_cyclo_html.html">user.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/models/user_rb_token_html.html">user.rb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/admin/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/admin/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/admin/panel_html_erb_cyclo_html.html">panel.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/admin/panel_html_erb_token_html.html">panel.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/bookings/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/bookings/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/bookings/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/bookings/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/bookings/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/bookings/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/bookings/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/bookings/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/bookings/show_html_erb_cyclo_html.html">show.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/bookings/show_html_erb_token_html.html">show.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/budgets/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/budgets/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/budgets/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/budgets/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/budgets/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/budgets/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/confirmations/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/confirmations/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/mailer/confirmation_instructions_html_erb_cyclo_html.html">confirmation_instructions.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/mailer/confirmation_instructions_html_erb_token_html.html">confirmation_instructions.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/mailer/email_changed_html_erb_cyclo_html.html">email_changed.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/mailer/email_changed_html_erb_token_html.html">email_changed.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/mailer/password_change_html_erb_cyclo_html.html">password_change.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/mailer/password_change_html_erb_token_html.html">password_change.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/mailer/reset_password_instructions_html_erb_cyclo_html.html">reset_password_instructions.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/mailer/reset_password_instructions_html_erb_token_html.html">reset_password_instructions.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/mailer/unlock_instructions_html_erb_cyclo_html.html">unlock_instructions.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/mailer/unlock_instructions_html_erb_token_html.html">unlock_instructions.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/passwords/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/passwords/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/passwords/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/passwords/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/registrations/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/registrations/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/registrations/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/registrations/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/sessions/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/sessions/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/shared/_error_messages_html_erb_cyclo_html.html">_error_messages.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/shared/_error_messages_html_erb_token_html.html">_error_messages.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/shared/_links_html_erb_cyclo_html.html">_links.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/shared/_links_html_erb_token_html.html">_links.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/unlocks/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/devise/unlocks/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/home/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/home/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/layouts/application_html_erb_cyclo_html.html">application.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/layouts/application_html_erb_token_html.html">application.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/layouts/mailer_html_erb_cyclo_html.html">mailer.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/layouts/mailer_html_erb_token_html.html">mailer.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/layouts/mailer_text_erb_cyclo_html.html">mailer.text.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/layouts/mailer_text_erb_token_html.html">mailer.text.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_deadlines/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_deadlines/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_deadlines/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_deadlines/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_deadlines/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_deadlines/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_types/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_types/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_types/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_types/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_types/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_types/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_types/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_types/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_types/show_html_erb_cyclo_html.html">show.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/request_types/show_html_erb_token_html.html">show.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/requests/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/requests/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/requests/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/requests/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/requests/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/requests/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/requests/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/requests/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/requests/show_html_erb_cyclo_html.html">show.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/requests/show_html_erb_token_html.html">show.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/requirements/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/requirements/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/requirements/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/requirements/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/requirements/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/requirements/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/tickets/_form_html_erb_cyclo_html.html">_form.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/tickets/_form_html_erb_token_html.html">_form.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/tickets/edit_html_erb_cyclo_html.html">edit.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/tickets/edit_html_erb_token_html.html">edit.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/tickets/index_html_erb_cyclo_html.html">index.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/tickets/index_html_erb_token_html.html">index.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/tickets/new_html_erb_cyclo_html.html">new.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/tickets/new_html_erb_token_html.html">new.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/app/views/tickets/show_html_erb_cyclo_html.html">show.html.erb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/app/views/tickets/show_html_erb_token_html.html">show.html.erb_token.html</a>
+  
+    <li><a href="../../../detailed/config/application_rb_cyclo_html.html">application.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/application_rb_token_html.html">application.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/boot_rb_cyclo_html.html">boot.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/boot_rb_token_html.html">boot.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/environment_rb_cyclo_html.html">environment.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/environment_rb_token_html.html">environment.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/environments/development_rb_cyclo_html.html">development.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/environments/development_rb_token_html.html">development.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/environments/production_rb_cyclo_html.html">production.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/environments/production_rb_token_html.html">production.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/environments/test_rb_cyclo_html.html">test.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/environments/test_rb_token_html.html">test.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/application_controller_renderer_rb_cyclo_html.html">application_controller_renderer.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/application_controller_renderer_rb_token_html.html">application_controller_renderer.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/assets_rb_cyclo_html.html">assets.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/assets_rb_token_html.html">assets.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/backtrace_silencers_rb_cyclo_html.html">backtrace_silencers.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/backtrace_silencers_rb_token_html.html">backtrace_silencers.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/content_security_policy_rb_cyclo_html.html">content_security_policy.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/content_security_policy_rb_token_html.html">content_security_policy.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/cookies_serializer_rb_cyclo_html.html">cookies_serializer.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/cookies_serializer_rb_token_html.html">cookies_serializer.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/devise_rb_cyclo_html.html">devise.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/devise_rb_token_html.html">devise.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/filter_parameter_logging_rb_cyclo_html.html">filter_parameter_logging.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/filter_parameter_logging_rb_token_html.html">filter_parameter_logging.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/inflections_rb_cyclo_html.html">inflections.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/inflections_rb_token_html.html">inflections.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/mime_types_rb_cyclo_html.html">mime_types.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/mime_types_rb_token_html.html">mime_types.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/wrap_parameters_rb_cyclo_html.html">wrap_parameters.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/initializers/wrap_parameters_rb_token_html.html">wrap_parameters.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/puma_rb_cyclo_html.html">puma.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/puma_rb_token_html.html">puma.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/routes_rb_cyclo_html.html">routes.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/routes_rb_token_html.html">routes.rb_token.html</a>
+  
+    <li><a href="../../../detailed/config/spring_rb_cyclo_html.html">spring.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/config/spring_rb_token_html.html">spring.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20191114162918_devise_create_users_rb_cyclo_html.html">20191114162918_devise_create_users.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20191114162918_devise_create_users_rb_token_html.html">20191114162918_devise_create_users.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20191114163205_add_info_to_users_rb_cyclo_html.html">20191114163205_add_info_to_users.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20191114163205_add_info_to_users_rb_token_html.html">20191114163205_add_info_to_users.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201113005520_create_request_types_rb_cyclo_html.html">20201113005520_create_request_types.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201113005520_create_request_types_rb_token_html.html">20201113005520_create_request_types.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201113005619_create_requests_rb_cyclo_html.html">20201113005619_create_requests.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201113005619_create_requests_rb_token_html.html">20201113005619_create_requests.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201203170755_create_requirements_rb_cyclo_html.html">20201203170755_create_requirements.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201203170755_create_requirements_rb_token_html.html">20201203170755_create_requirements.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201203212607_create_budgets_rb_cyclo_html.html">20201203212607_create_budgets.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201203212607_create_budgets_rb_token_html.html">20201203212607_create_budgets.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204172747_create_tickets_rb_cyclo_html.html">20201204172747_create_tickets.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204172747_create_tickets_rb_token_html.html">20201204172747_create_tickets.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204185313_add_user_id_to_tickets_rb_cyclo_html.html">20201204185313_add_user_id_to_tickets.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204185313_add_user_id_to_tickets_rb_token_html.html">20201204185313_add_user_id_to_tickets.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204190307_change_data_entrada_to_date_rb_cyclo_html.html">20201204190307_change_data_entrada_to_date.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204190307_change_data_entrada_to_date_rb_token_html.html">20201204190307_change_data_entrada_to_date.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204195343_create_request_deadlines_rb_cyclo_html.html">20201204195343_create_request_deadlines.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204195343_create_request_deadlines_rb_token_html.html">20201204195343_create_request_deadlines.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204220942_create_bookings_rb_cyclo_html.html">20201204220942_create_bookings.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204220942_create_bookings_rb_token_html.html">20201204220942_create_bookings.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204235248_add_user_id_to_bookings_rb_cyclo_html.html">20201204235248_add_user_id_to_bookings.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/migrate/20201204235248_add_user_id_to_bookings_rb_token_html.html">20201204235248_add_user_id_to_bookings.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/schema_rb_cyclo_html.html">schema.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/schema_rb_token_html.html">schema.rb_token.html</a>
+  
+    <li><a href="../../../detailed/db/seeds_rb_cyclo_html.html">seeds.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/db/seeds_rb_token_html.html">seeds.rb_token.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/bookings/request_bookings_steps_rb_cyclo_html.html">request_bookings_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/bookings/request_bookings_steps_rb_token_html.html">request_bookings_steps.rb_token.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/budgets/verify_budget_steps_rb_cyclo_html.html">verify_budget_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/budgets/verify_budget_steps_rb_token_html.html">verify_budget_steps.rb_token.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/request/list_requests_steps_rb_cyclo_html.html">list_requests_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/request/list_requests_steps_rb_token_html.html">list_requests_steps.rb_token.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/request_deadlines/set_request_deadline_steps_rb_cyclo_html.html">set_request_deadline_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/request_deadlines/set_request_deadline_steps_rb_token_html.html">set_request_deadline_steps.rb_token.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/requirements/define_assistance_requirements_steps_rb_cyclo_html.html">define_assistance_requirements_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/requirements/define_assistance_requirements_steps_rb_token_html.html">define_assistance_requirements_steps.rb_token.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/tickets/request_tickets_steps_rb_cyclo_html.html">request_tickets_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/features/step_definitions/tickets/request_tickets_steps_rb_token_html.html">request_tickets_steps.rb_token.html</a>
+  
+    <li><a href="../../../detailed/features/support/env_rb_cyclo_html.html">env.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/features/support/env_rb_token_html.html">env.rb_token.html</a>
+  
+    <li><a href="../../../detailed/index_cyclo_html.html">index_cyclo.html</a>
+  
+    <li><a href="../../../detailed/index_token_html.html">index_token.html</a>
+  
+    <li><a href="../../../detailed/spec/controllers/home_controller_spec_rb_cyclo_html.html">home_controller_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/controllers/home_controller_spec_rb_token_html.html">home_controller_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/controllers/request_controller_spec_rb_cyclo_html.html">request_controller_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/controllers/request_controller_spec_rb_token_html.html">request_controller_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/factories_rb_cyclo_html.html">factories.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/factories_rb_token_html.html">factories.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/admin_helper_spec_rb_cyclo_html.html">admin_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/admin_helper_spec_rb_token_html.html">admin_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/bookings_helper_spec_rb_cyclo_html.html">bookings_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/bookings_helper_spec_rb_token_html.html">bookings_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/budgets_helper_spec_rb_cyclo_html.html">budgets_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/budgets_helper_spec_rb_token_html.html">budgets_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/home_helper_spec_rb_cyclo_html.html">home_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/home_helper_spec_rb_token_html.html">home_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/request_deadlines_helper_spec_rb_cyclo_html.html">request_deadlines_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/request_deadlines_helper_spec_rb_token_html.html">request_deadlines_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/request_types_helper_spec_rb_cyclo_html.html">request_types_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/request_types_helper_spec_rb_token_html.html">request_types_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/requests_helper_spec_rb_cyclo_html.html">requests_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/requests_helper_spec_rb_token_html.html">requests_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/requirements_helper_spec_rb_cyclo_html.html">requirements_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/requirements_helper_spec_rb_token_html.html">requirements_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/tickets_helper_spec_rb_cyclo_html.html">tickets_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/helpers/tickets_helper_spec_rb_token_html.html">tickets_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/models/booking_spec_rb_cyclo_html.html">booking_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/models/booking_spec_rb_token_html.html">booking_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/models/budget_spec_rb_cyclo_html.html">budget_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/models/budget_spec_rb_token_html.html">budget_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/models/request_deadline_spec_rb_cyclo_html.html">request_deadline_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/models/request_deadline_spec_rb_token_html.html">request_deadline_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/models/request_spec_rb_cyclo_html.html">request_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/models/request_spec_rb_token_html.html">request_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/models/request_type_spec_rb_cyclo_html.html">request_type_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/models/request_type_spec_rb_token_html.html">request_type_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/models/requirement_spec_rb_cyclo_html.html">requirement_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/models/requirement_spec_rb_token_html.html">requirement_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/models/ticket_spec_rb_cyclo_html.html">ticket_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/models/ticket_spec_rb_token_html.html">ticket_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/models/user_spec_rb_cyclo_html.html">user_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/models/user_spec_rb_token_html.html">user_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/rails_helper_rb_cyclo_html.html">rails_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/rails_helper_rb_token_html.html">rails_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/admin_request_spec_rb_cyclo_html.html">admin_request_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/admin_request_spec_rb_token_html.html">admin_request_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/bookings_spec_rb_cyclo_html.html">bookings_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/bookings_spec_rb_token_html.html">bookings_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/budgets_spec_rb_cyclo_html.html">budgets_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/budgets_spec_rb_token_html.html">budgets_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/request_deadlines_spec_rb_cyclo_html.html">request_deadlines_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/request_deadlines_spec_rb_token_html.html">request_deadlines_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/request_types_spec_rb_cyclo_html.html">request_types_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/request_types_spec_rb_token_html.html">request_types_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/requests_spec_rb_cyclo_html.html">requests_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/requests_spec_rb_token_html.html">requests_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/requirements_spec_rb_cyclo_html.html">requirements_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/requirements_spec_rb_token_html.html">requirements_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/tickets_spec_rb_cyclo_html.html">tickets_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/requests/tickets_spec_rb_token_html.html">tickets_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/bookings_routing_spec_rb_cyclo_html.html">bookings_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/bookings_routing_spec_rb_token_html.html">bookings_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/budgets_routing_spec_rb_cyclo_html.html">budgets_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/budgets_routing_spec_rb_token_html.html">budgets_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/request_deadlines_routing_spec_rb_cyclo_html.html">request_deadlines_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/request_deadlines_routing_spec_rb_token_html.html">request_deadlines_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/request_types_routing_spec_rb_cyclo_html.html">request_types_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/request_types_routing_spec_rb_token_html.html">request_types_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/requests_routing_spec_rb_cyclo_html.html">requests_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/requests_routing_spec_rb_token_html.html">requests_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/requirements_routing_spec_rb_cyclo_html.html">requirements_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/requirements_routing_spec_rb_token_html.html">requirements_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/tickets_routing_spec_rb_cyclo_html.html">tickets_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/routing/tickets_routing_spec_rb_token_html.html">tickets_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/spec_helper_rb_cyclo_html.html">spec_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/spec_helper_rb_token_html.html">spec_helper.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/support/factory_bot_rb_cyclo_html.html">factory_bot.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/support/factory_bot_rb_token_html.html">factory_bot.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/admin/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/admin/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/admin/panel_html_erb_spec_rb_cyclo_html.html">panel.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/admin/panel_html_erb_spec_rb_token_html.html">panel.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/bookings/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/bookings/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/bookings/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/bookings/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/bookings/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/bookings/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/bookings/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/bookings/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/budgets/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/budgets/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/budgets/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/budgets/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/budgets/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/budgets/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/budgets/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/budgets/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/home/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/home/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_deadlines/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_deadlines/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_deadlines/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_deadlines/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_deadlines/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_deadlines/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_deadlines/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_deadlines/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_types/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_types/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_types/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_types/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_types/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_types/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_types/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/request_types/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requests/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requests/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requests/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requests/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requests/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requests/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requests/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requests/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requirements/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requirements/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requirements/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requirements/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requirements/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requirements/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requirements/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/requirements/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/tickets/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/tickets/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/tickets/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/tickets/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/tickets/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/tickets/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/spec/views/tickets/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/spec/views/tickets/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../detailed/test/application_system_test_case_rb_cyclo_html.html">application_system_test_case.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/test/application_system_test_case_rb_token_html.html">application_system_test_case.rb_token.html</a>
+  
+    <li><a href="../../../detailed/test/test_helper_rb_cyclo_html.html">test_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../detailed/test/test_helper_rb_token_html.html">test_helper.rb_token.html</a>
+  
+    <li><a href="../../../features/bookings/request_bookings_feature.html">request_bookings.feature</a>
+  
+    <li><a href="../../../features/budgets/verify_budget_feature.html">verify_budget.feature</a>
+  
+    <li><a href="../../../features/request/list_requests_feature.html">list_requests.feature</a>
+  
+    <li><a href="../../../features/request_deadlines/set_request_deadline_feature.html">set_request_deadline.feature</a>
+  
+    <li><a href="../../../features/requirements/define_requirements_feature.html">define_requirements.feature</a>
+  
+    <li><a href="../../../features/step_definitions/bookings/request_bookings_steps_rb_cyclo_html.html">request_bookings_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../features/step_definitions/bookings/request_bookings_steps_rb_token_html.html">request_bookings_steps.rb_token.html</a>
+  
+    <li><a href="../../../features/step_definitions/budgets/verify_budget_steps_rb_cyclo_html.html">verify_budget_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../features/step_definitions/budgets/verify_budget_steps_rb_token_html.html">verify_budget_steps.rb_token.html</a>
+  
+    <li><a href="../../../features/step_definitions/request/list_requests_steps_rb_cyclo_html.html">list_requests_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../features/step_definitions/request/list_requests_steps_rb_token_html.html">list_requests_steps.rb_token.html</a>
+  
+    <li><a href="../../../features/step_definitions/request_deadlines/set_request_deadline_steps_rb_cyclo_html.html">set_request_deadline_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../features/step_definitions/request_deadlines/set_request_deadline_steps_rb_token_html.html">set_request_deadline_steps.rb_token.html</a>
+  
+    <li><a href="../../../features/step_definitions/requirements/define_assistance_requirements_steps_rb_cyclo_html.html">define_assistance_requirements_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../features/step_definitions/requirements/define_assistance_requirements_steps_rb_token_html.html">define_assistance_requirements_steps.rb_token.html</a>
+  
+    <li><a href="../../../features/step_definitions/tickets/request_tickets_steps_rb_cyclo_html.html">request_tickets_steps.rb_cyclo.html</a>
+  
+    <li><a href="../../../features/step_definitions/tickets/request_tickets_steps_rb_token_html.html">request_tickets_steps.rb_token.html</a>
+  
+    <li><a href="../../../features/support/env_rb_cyclo_html.html">env.rb_cyclo.html</a>
+  
+    <li><a href="../../../features/support/env_rb_token_html.html">env.rb_token.html</a>
+  
+    <li><a href="../../../features/ticket/request_tickets_feature.html">request_tickets.feature</a>
+  
+    <li><a href="../../../index_cyclo_html.html">index_cyclo.html</a>
+  
+    <li><a href="../../../index_token_html.html">index_token.html</a>
+  
+    <li><a href="../../../lib/tasks/cucumber_rake.html">cucumber.rake</a>
+  
+    <li><a href="../../../log/test_log.html">test.log</a>
+  
+    <li><a href="../../../package_json.html">package.json</a>
+  
+    <li><a href="../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+  
+    <li><a href="../../../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+  
+    <li><a href="../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../../public/robots_txt.html">robots</a>
+  
+    <li><a href="../../../spec/controllers/home_controller_spec_rb_cyclo_html.html">home_controller_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/controllers/home_controller_spec_rb_token_html.html">home_controller_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/controllers/request_controller_spec_rb_cyclo_html.html">request_controller_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/controllers/request_controller_spec_rb_token_html.html">request_controller_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/factories_rb_cyclo_html.html">factories.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/factories_rb_token_html.html">factories.rb_token.html</a>
+  
+    <li><a href="../../../spec/helpers/admin_helper_spec_rb_cyclo_html.html">admin_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/helpers/admin_helper_spec_rb_token_html.html">admin_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/helpers/bookings_helper_spec_rb_cyclo_html.html">bookings_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/helpers/bookings_helper_spec_rb_token_html.html">bookings_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/helpers/budgets_helper_spec_rb_cyclo_html.html">budgets_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/helpers/budgets_helper_spec_rb_token_html.html">budgets_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/helpers/home_helper_spec_rb_cyclo_html.html">home_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/helpers/home_helper_spec_rb_token_html.html">home_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/helpers/request_deadlines_helper_spec_rb_cyclo_html.html">request_deadlines_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/helpers/request_deadlines_helper_spec_rb_token_html.html">request_deadlines_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/helpers/request_types_helper_spec_rb_cyclo_html.html">request_types_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/helpers/request_types_helper_spec_rb_token_html.html">request_types_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/helpers/requests_helper_spec_rb_cyclo_html.html">requests_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/helpers/requests_helper_spec_rb_token_html.html">requests_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/helpers/requirements_helper_spec_rb_cyclo_html.html">requirements_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/helpers/requirements_helper_spec_rb_token_html.html">requirements_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/helpers/tickets_helper_spec_rb_cyclo_html.html">tickets_helper_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/helpers/tickets_helper_spec_rb_token_html.html">tickets_helper_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/models/booking_spec_rb_cyclo_html.html">booking_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/models/booking_spec_rb_token_html.html">booking_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/models/budget_spec_rb_cyclo_html.html">budget_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/models/budget_spec_rb_token_html.html">budget_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/models/request_deadline_spec_rb_cyclo_html.html">request_deadline_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/models/request_deadline_spec_rb_token_html.html">request_deadline_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/models/request_spec_rb_cyclo_html.html">request_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/models/request_spec_rb_token_html.html">request_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/models/request_type_spec_rb_cyclo_html.html">request_type_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/models/request_type_spec_rb_token_html.html">request_type_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/models/requirement_spec_rb_cyclo_html.html">requirement_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/models/requirement_spec_rb_token_html.html">requirement_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/models/ticket_spec_rb_cyclo_html.html">ticket_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/models/ticket_spec_rb_token_html.html">ticket_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/models/user_spec_rb_cyclo_html.html">user_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/models/user_spec_rb_token_html.html">user_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/rails_helper_rb_cyclo_html.html">rails_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/rails_helper_rb_token_html.html">rails_helper.rb_token.html</a>
+  
+    <li><a href="../../../spec/requests/admin_request_spec_rb_cyclo_html.html">admin_request_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/requests/admin_request_spec_rb_token_html.html">admin_request_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/requests/bookings_spec_rb_cyclo_html.html">bookings_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/requests/bookings_spec_rb_token_html.html">bookings_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/requests/budgets_spec_rb_cyclo_html.html">budgets_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/requests/budgets_spec_rb_token_html.html">budgets_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/requests/request_deadlines_spec_rb_cyclo_html.html">request_deadlines_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/requests/request_deadlines_spec_rb_token_html.html">request_deadlines_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/requests/request_types_spec_rb_cyclo_html.html">request_types_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/requests/request_types_spec_rb_token_html.html">request_types_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/requests/requests_spec_rb_cyclo_html.html">requests_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/requests/requests_spec_rb_token_html.html">requests_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/requests/requirements_spec_rb_cyclo_html.html">requirements_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/requests/requirements_spec_rb_token_html.html">requirements_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/requests/tickets_spec_rb_cyclo_html.html">tickets_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/requests/tickets_spec_rb_token_html.html">tickets_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/routing/bookings_routing_spec_rb_cyclo_html.html">bookings_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/routing/bookings_routing_spec_rb_token_html.html">bookings_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/routing/budgets_routing_spec_rb_cyclo_html.html">budgets_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/routing/budgets_routing_spec_rb_token_html.html">budgets_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/routing/request_deadlines_routing_spec_rb_cyclo_html.html">request_deadlines_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/routing/request_deadlines_routing_spec_rb_token_html.html">request_deadlines_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/routing/request_types_routing_spec_rb_cyclo_html.html">request_types_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/routing/request_types_routing_spec_rb_token_html.html">request_types_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/routing/requests_routing_spec_rb_cyclo_html.html">requests_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/routing/requests_routing_spec_rb_token_html.html">requests_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/routing/requirements_routing_spec_rb_cyclo_html.html">requirements_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/routing/requirements_routing_spec_rb_token_html.html">requirements_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/routing/tickets_routing_spec_rb_cyclo_html.html">tickets_routing_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/routing/tickets_routing_spec_rb_token_html.html">tickets_routing_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/spec_helper_rb_cyclo_html.html">spec_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/spec_helper_rb_token_html.html">spec_helper.rb_token.html</a>
+  
+    <li><a href="../../../spec/support/factory_bot_rb_cyclo_html.html">factory_bot.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/support/factory_bot_rb_token_html.html">factory_bot.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/admin/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/admin/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/admin/panel_html_erb_spec_rb_cyclo_html.html">panel.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/admin/panel_html_erb_spec_rb_token_html.html">panel.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/bookings/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/bookings/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/bookings/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/bookings/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/bookings/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/bookings/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/bookings/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/bookings/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/budgets/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/budgets/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/budgets/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/budgets/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/budgets/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/budgets/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/budgets/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/budgets/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/home/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/home/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/request_deadlines/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/request_deadlines/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/request_deadlines/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/request_deadlines/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/request_deadlines/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/request_deadlines/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/request_deadlines/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/request_deadlines/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/request_types/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/request_types/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/request_types/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/request_types/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/request_types/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/request_types/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/request_types/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/request_types/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/requests/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/requests/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/requests/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/requests/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/requests/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/requests/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/requests/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/requests/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/requirements/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/requirements/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/requirements/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/requirements/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/requirements/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/requirements/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/requirements/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/requirements/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/tickets/edit_html_erb_spec_rb_cyclo_html.html">edit.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/tickets/edit_html_erb_spec_rb_token_html.html">edit.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/tickets/index_html_erb_spec_rb_cyclo_html.html">index.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/tickets/index_html_erb_spec_rb_token_html.html">index.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/tickets/new_html_erb_spec_rb_cyclo_html.html">new.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/tickets/new_html_erb_spec_rb_token_html.html">new.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../spec/views/tickets/show_html_erb_spec_rb_cyclo_html.html">show.html.erb_spec.rb_cyclo.html</a>
+  
+    <li><a href="../../../spec/views/tickets/show_html_erb_spec_rb_token_html.html">show.html.erb_spec.rb_token.html</a>
+  
+    <li><a href="../../../test/application_system_test_case_rb_cyclo_html.html">application_system_test_case.rb_cyclo.html</a>
+  
+    <li><a href="../../../test/application_system_test_case_rb_token_html.html">application_system_test_case.rb_token.html</a>
+  
+    <li><a href="../../../test/test_helper_rb_cyclo_html.html">test_helper.rb_cyclo.html</a>
+  
+    <li><a href="../../../test/test_helper_rb_token_html.html">test_helper.rb_token.html</a>
+  
+    <li><a href="../../../tmp/development_secret_txt.html">development_secret</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/channels/application_cable/channel_html.html">channel.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/channels/application_cable/connection_html.html">connection.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/controllers/admin_controller_html.html">admin_controller.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/controllers/application_controller_html.html">application_controller.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/controllers/bookings_controller_html.html">bookings_controller.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/controllers/budgets_controller_html.html">budgets_controller.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/controllers/home_controller_html.html">home_controller.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/controllers/request_deadlines_controller_html.html">request_deadlines_controller.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/controllers/request_types_controller_html.html">request_types_controller.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/controllers/requests_controller_html.html">requests_controller.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/controllers/requirements_controller_html.html">requirements_controller.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/controllers/tickets_controller_html.html">tickets_controller.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/helpers/admin_helper_html.html">admin_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/helpers/application_helper_html.html">application_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/helpers/bookings_helper_html.html">bookings_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/helpers/budgets_helper_html.html">budgets_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/helpers/home_helper_html.html">home_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/helpers/request_deadlines_helper_html.html">request_deadlines_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/helpers/request_types_helper_html.html">request_types_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/helpers/requests_helper_html.html">requests_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/helpers/requirements_helper_html.html">requirements_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/helpers/tickets_helper_html.html">tickets_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/jobs/application_job_html.html">application_job.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/mailers/application_mailer_html.html">application_mailer.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/models/application_record_html.html">application_record.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/models/booking_html.html">booking.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/models/budget_html.html">budget.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/models/request_html.html">request.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/models/request_deadline_html.html">request_deadline.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/models/request_type_html.html">request_type.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/models/requirement_html.html">requirement.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/models/ticket_html.html">ticket.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/app/models/user_html.html">user.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/javascripts/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/javascripts/highcharts_src-4_0_1_js.html">highcharts.src-4.0.1.js</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/javascripts/jquery_filtertable_min_js.html">jquery.filtertable.min.js</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/javascripts/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/javascripts/jquery_scrollTo_min_js.html">jquery.scrollTo.min.js</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/javascripts/jquery_tablesorter_js.html">jquery.tablesorter.js</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/javascripts/jquery_tablesorter_min_js.html">jquery.tablesorter.min.js</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/javascripts/jquery_timeago_js.html">jquery.timeago.js</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/javascripts/prettify_js.html">prettify.js</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/stylesheets/bootstrap_min_css.html">bootstrap.min.css</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/stylesheets/font-awesome_min_css.html">font-awesome.min.css</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/stylesheets/prettify_css.html">prettify.css</a>
+  
+    <li><a href="../../../tmp/rubycritic/assets/stylesheets/prettify_custom_theme_css.html">prettify.custom_theme.css</a>
+  
+    <li><a href="../../../tmp/rubycritic/code_index_html.html">code_index.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/application_html.html">application.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/boot_html.html">boot.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/environment_html.html">environment.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/environments/development_html.html">development.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/environments/production_html.html">production.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/environments/test_html.html">test.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/initializers/application_controller_renderer_html.html">application_controller_renderer.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/initializers/assets_html.html">assets.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/initializers/backtrace_silencers_html.html">backtrace_silencers.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/initializers/content_security_policy_html.html">content_security_policy.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/initializers/cookies_serializer_html.html">cookies_serializer.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/initializers/devise_html.html">devise.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/initializers/filter_parameter_logging_html.html">filter_parameter_logging.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/initializers/inflections_html.html">inflections.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/initializers/mime_types_html.html">mime_types.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/initializers/wrap_parameters_html.html">wrap_parameters.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/puma_html.html">puma.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/routes_html.html">routes.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/config/spring_html.html">spring.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20191114162918_devise_create_users_html.html">20191114162918_devise_create_users.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20191114163205_add_info_to_users_html.html">20191114163205_add_info_to_users.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20201113005520_create_request_types_html.html">20201113005520_create_request_types.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20201113005619_create_requests_html.html">20201113005619_create_requests.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20201203170755_create_requirements_html.html">20201203170755_create_requirements.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20201203212607_create_budgets_html.html">20201203212607_create_budgets.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20201204172747_create_tickets_html.html">20201204172747_create_tickets.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20201204185313_add_user_id_to_tickets_html.html">20201204185313_add_user_id_to_tickets.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20201204190307_change_data_entrada_to_date_html.html">20201204190307_change_data_entrada_to_date.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20201204195343_create_request_deadlines_html.html">20201204195343_create_request_deadlines.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20201204220942_create_bookings_html.html">20201204220942_create_bookings.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/migrate/20201204235248_add_user_id_to_bookings_html.html">20201204235248_add_user_id_to_bookings.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/schema_html.html">schema.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/db/seeds_html.html">seeds.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/features/step_definitions/bookings/request_bookings_steps_html.html">request_bookings_steps.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/features/step_definitions/budgets/verify_budget_steps_html.html">verify_budget_steps.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/features/step_definitions/request/list_requests_steps_html.html">list_requests_steps.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/features/step_definitions/request_deadlines/set_request_deadline_steps_html.html">set_request_deadline_steps.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/features/step_definitions/requirements/define_assistance_requirements_steps_html.html">define_assistance_requirements_steps.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/features/step_definitions/tickets/request_tickets_steps_html.html">request_tickets_steps.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/features/support/env_html.html">env.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/overview_html.html">overview.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/simple_cov_index_html.html">simple_cov_index.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/smells_index_html.html">smells_index.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/controllers/home_controller_spec_html.html">home_controller_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/controllers/request_controller_spec_html.html">request_controller_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/factories_html.html">factories.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/helpers/admin_helper_spec_html.html">admin_helper_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/helpers/bookings_helper_spec_html.html">bookings_helper_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/helpers/budgets_helper_spec_html.html">budgets_helper_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/helpers/home_helper_spec_html.html">home_helper_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/helpers/request_deadlines_helper_spec_html.html">request_deadlines_helper_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/helpers/request_types_helper_spec_html.html">request_types_helper_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/helpers/requests_helper_spec_html.html">requests_helper_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/helpers/requirements_helper_spec_html.html">requirements_helper_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/helpers/tickets_helper_spec_html.html">tickets_helper_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/models/booking_spec_html.html">booking_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/models/budget_spec_html.html">budget_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/models/request_deadline_spec_html.html">request_deadline_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/models/request_spec_html.html">request_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/models/request_type_spec_html.html">request_type_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/models/requirement_spec_html.html">requirement_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/models/ticket_spec_html.html">ticket_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/models/user_spec_html.html">user_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/rails_helper_html.html">rails_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/requests/admin_request_spec_html.html">admin_request_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/requests/bookings_spec_html.html">bookings_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/requests/budgets_spec_html.html">budgets_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/requests/request_deadlines_spec_html.html">request_deadlines_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/requests/request_types_spec_html.html">request_types_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/requests/requests_spec_html.html">requests_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/requests/requirements_spec_html.html">requirements_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/requests/tickets_spec_html.html">tickets_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/routing/bookings_routing_spec_html.html">bookings_routing_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/routing/budgets_routing_spec_html.html">budgets_routing_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/routing/request_deadlines_routing_spec_html.html">request_deadlines_routing_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/routing/request_types_routing_spec_html.html">request_types_routing_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/routing/requests_routing_spec_html.html">requests_routing_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/routing/requirements_routing_spec_html.html">requirements_routing_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/routing/tickets_routing_spec_html.html">tickets_routing_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/spec_helper_html.html">spec_helper.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/support/factory_bot_html.html">factory_bot.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/admin/index_html_erb_spec_html.html">index.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/admin/panel_html_erb_spec_html.html">panel.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/bookings/edit_html_erb_spec_html.html">edit.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/bookings/index_html_erb_spec_html.html">index.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/bookings/new_html_erb_spec_html.html">new.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/bookings/show_html_erb_spec_html.html">show.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/budgets/edit_html_erb_spec_html.html">edit.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/budgets/index_html_erb_spec_html.html">index.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/budgets/new_html_erb_spec_html.html">new.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/budgets/show_html_erb_spec_html.html">show.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/home/index_html_erb_spec_html.html">index.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/request_deadlines/edit_html_erb_spec_html.html">edit.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/request_deadlines/index_html_erb_spec_html.html">index.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/request_deadlines/new_html_erb_spec_html.html">new.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/request_deadlines/show_html_erb_spec_html.html">show.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/request_types/edit_html_erb_spec_html.html">edit.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/request_types/index_html_erb_spec_html.html">index.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/request_types/new_html_erb_spec_html.html">new.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/request_types/show_html_erb_spec_html.html">show.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/requests/edit_html_erb_spec_html.html">edit.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/requests/index_html_erb_spec_html.html">index.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/requests/new_html_erb_spec_html.html">new.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/requests/show_html_erb_spec_html.html">show.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/requirements/edit_html_erb_spec_html.html">edit.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/requirements/index_html_erb_spec_html.html">index.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/requirements/new_html_erb_spec_html.html">new.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/requirements/show_html_erb_spec_html.html">show.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/tickets/edit_html_erb_spec_html.html">edit.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/tickets/index_html_erb_spec_html.html">index.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/tickets/new_html_erb_spec_html.html">new.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/spec/views/tickets/show_html_erb_spec_html.html">show.html.erb_spec.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/test/application_system_test_case_html.html">application_system_test_case.html</a>
+  
+    <li><a href="../../../tmp/rubycritic/test/test_helper_html.html">test_helper.html</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page detailed/app/controllers/requirements_controller.rb_token.html">
+
+<p>&lt;html&gt; &lt;style&gt; body {</p>
+
+<pre>margin: 20px;
+padding: 0;
+font-size: 12px;
+font-family: bitstream vera sans, verdana, arial, sans serif;
+background-color: #efefef;</pre>
+
+<p>}</p>
+
+<p>table { </p>
+
+<pre>border-collapse: collapse;
+  border-spacing: 0;  
+border: 1px solid #666;
+background-color: #fff;
+margin-bottom: 20px;</pre>
+
+<p>}</p>
+
+<p>table, th, th+th, td, td+td  {</p>
+
+<pre>border: 1px solid #ccc;</pre>
+
+<p>}</p>
+
+<p>table th {</p>
+
+<pre>font-size: 12px;
+color: #fc0;
+padding: 4px 0;
+background-color: #336;</pre>
+
+<p>}</p>
+
+<p>th, td {</p>
+
+<pre>padding: 4px 10px;</pre>
+
+<p>}</p>
+
+<p>td { </p>
+
+<pre>font-size: 13px;</pre>
+
+<p>}</p>
+
+<p>.class_name {</p>
+
+<pre>font-size: 17px;
+margin: 20px 0 0;</pre>
+
+<p>}</p>
+
+<p>.class_complexity { margin: 0 auto; }</p>
+
+<p>.class_complexity&gt;.class_complexity {</p>
+
+<pre>margin: 0;</pre>
+
+<p>}</p>
+
+<p>.class_total_complexity, .class_total_lines, .start_token_count, .file_count {</p>
+
+<pre>font-size: 13px;
+font-weight: bold;</pre>
+
+<p>}</p>
+
+<p>.class_total_complexity, .class_total_lines {</p>
+
+<pre>color: #c00;</pre>
+
+<p>}</p>
+
+<p>.start_token_count, .file_count {</p>
+
+<pre>color: #333;</pre>
+
+<p>}</p>
+
+<p>.warning {</p>
+
+<pre>background-color: yellow;</pre>
+
+<p>}</p>
+
+<p>.error {</p>
+
+<pre>background-color: #f00;</pre>
+
+<p>} &lt;/style&gt; &lt;body&gt; &lt;div class=“start_token_count”&gt; Number of files: 1 &lt;/div&gt; &lt;div class=“file_count”&gt; &lt;p class=“file_name”&gt; File: ./app/controllers/requirements_controller.rb &lt;/p&gt; &lt;table width=“100%” border=“1”&gt; &lt;tr&gt;&lt;th&gt;Line&lt;/th&gt;&lt;th&gt;Tokens&lt;/th&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;43&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;44&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;47&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;55&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt; &lt;/body&gt; &lt;/html&gt;</p>
+
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

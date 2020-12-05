@@ -1,7 +1,6 @@
 class AdminController < ApplicationController
-  ## 
-  # Apenas uma view para redirecionar a lista de Requisições
   def panel
+    @requests = Request.all
   end
 
   def index

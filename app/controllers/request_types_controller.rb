@@ -1,9 +1,14 @@
 class RequestTypesController < ApplicationController
   before_action :set_request_type, only: [:show, :edit, :update, :destroy]
 
+<<<<<<< HEAD
   ##
   # Serve para buscar todas os tipo de requisição e envia as informações para a view
   # @return [@request_types] se existir
+=======
+  # GET /request_types
+  # GET /request_types.json
+>>>>>>> 7329d7928ac05f35e9973bc48a28ba2bbaade306
   def index
     @request_types = RequestType.all
   end
